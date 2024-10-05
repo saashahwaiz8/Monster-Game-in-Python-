@@ -22,7 +22,7 @@ class Earth(Entity):
             parent = scene,
             model ='sphere',
             scale = Vec3(1500),
-            texture = 'sky_sunset, 
+            texture = 'sky_sunset', 
             double_sided = True
         )
             
