@@ -11,7 +11,7 @@ class Ground(Entity):
     def __init__(self):
         super().__init__(
             scale = Vec3(1000,1,1000),
-            texture = 'Floor.jpg',
+            texture = 'grass',
             collider = 'mesh',
             model = 'plane'
         )
@@ -22,7 +22,7 @@ class Earth(Entity):
             parent = scene,
             model ='sphere',
             scale = Vec3(1500),
-            texture = 'Sky.jfif', 
+            texture = 'sky_sunset, 
             double_sided = True
         )
             
@@ -34,7 +34,8 @@ class Mace(Entity):
             scale = (0.2, 0.3),
             rotation = Vec3(150, -10, 0),
             position = Vec2(0.4, -0.4),
-            texture = 'Mace.png'
+            texture = 'white_cube',
+            color = color.lime,
         )
 
     def active(self):
@@ -50,7 +51,8 @@ class Enemy1(Entity):
         super().__init__(
             scale=Vec3(2, 6, 1.5),
             model='cube',
-            texture='Huggy Wuggy.jfif',
+            texture='white_cube',
+            color = color.blue,
             position=Vec3(55, 0, 0)
         )
     
@@ -61,7 +63,8 @@ class Enemy2(Entity):
         super().__init__(
             scale = Vec3(2, 6, 1.5),
             model = 'cube',
-            texture = 'Box.jfif',
+            texture = 'white_cube',
+            color = color.red,
             position = Vec3(100, 0, 0)
         )
 
@@ -70,7 +73,8 @@ class Enemy3(Entity):
         super().__init__(
             scale = Vec3(2, 6, 1.5),
             model = 'cube',
-            texture = 'Catnap.jfif',
+            texture = 'white_cube',
+            color = color.green,
             position = Vec3(100, 0, 0)
         )
         
